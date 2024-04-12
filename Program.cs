@@ -8,6 +8,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.MapGet("/", () => "Hello World!");
+
 //if (app.Environment.IsDevelopment())
 //{
 app.UseSwagger();
